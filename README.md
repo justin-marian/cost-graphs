@@ -28,8 +28,8 @@ The `Shortest Path Faster Algorithm (SPFA)` is a variation of the Bellman-Ford a
 
 ## Summary
 
-| Algorithm                                          | Complexity        | Description                                                                                                         |
-|----------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------|
-| **Cycle Detection**                                    | *O(\|V\| + \|E\|)*          | Detects cycles in the graph efficiently using Depth-First Search (DFS).                                             |
-| **Single-Source Shortest Path Using Topological Sort** | *O(\|V\| + \|E\|)*          | Computes shortest paths from a single source vertex in a directed acyclic graph (DAG) using topological sorting.   |
-| **Single-Source Shortest Path Using SPFA**             | *O(\|E\|) (**average**)*   | Finds shortest paths from a single source vertex in a graph with negative edge weights efficiently using SPFA.     |
+| Algorithm                                          | Time Complexity        | Space Complexity        | Description                                                                                                         |
+|----------------------------------------------------|------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------|
+| **Cycle Detection**                               | ***O(V + E)***             | ***O(V + E)***              | Detects cycles in the graph efficiently using Depth-First Search (DFS).                                             |
+| **Single-Source Shortest Path Using Topological Sort** | ***O(V + E)***          | ***O(V + E)***              | Computes shortest paths from a single source vertex in a directed acyclic graph (DAG) using topological sorting.   |
+| **Single-Source Shortest Path Using SPFA**             | ***O(E) (average)***   | ***O(V)***                  | Finds shortest paths from a single source vertex in a graph with negative edge weights efficiently using SPFA.     |
