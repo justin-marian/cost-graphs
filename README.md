@@ -2,16 +2,6 @@
 
 Algorithms for **cycle detectio**n and **finding single-source shortest paths** using different approaches such as **topological sorting** and the **Shortest Path Faster Algorithm (SPFA)**. Each algorithm is explained briefly, along with its time complexity and usage.
 
-## Table of Contents
-
-- [Cost graphs](#cost-graphs)
-  - [Table of Contents](#table-of-contents)
-  - [Cycle Detection](#cycle-detection)
-  - [Single-Source Shortest Path](#single-source-shortest-path)
-    - [Topological Sort](#topological-sort)
-    - [Shortest Path Faster Algorithm](#shortest-path-faster-algorithm)
-  - [Summary](#summary)
-
 ## [Cycle Detection](https://en.wikipedia.org/wiki/Cycle_(graph_theory))
 
 The `Cycle Detection` algorithm used in the provided code is based on **Depth-First Search (DFS)**. It explores the graph, tracking visited nodes and maintaining a stack of currently active nodes. If during the traversal, DFS encounters an already visited node in the stack, it indicates the presence of a cycle.
