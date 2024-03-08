@@ -5,7 +5,7 @@
 all: build_verif
 
 build_verif:
-	g++ -std=c++11 -Wall -Wextra -lm -O3 ${ONLINE_JUDGE} _utils/verif.cpp -o verif
+	g++ -std=c++11 -Wall -Wextra -lm -O3 ${ONLINE_JUDGE} utils/verif.cpp -o verif
 
 clean:
 	rm -f verif

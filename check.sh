@@ -11,8 +11,7 @@ DEBUG=on
 
 total=0						# don't change
 MAX_POINTS=100      		# you can change it
-UTILS=_utils				# don't change
-SOURCE_TMP_DIR=src_check	# don't change
+UTILS=utils					# don't change
 
 # Put your tasks in this function
 test_homework() {
@@ -202,18 +201,6 @@ if [[ "$1" = "h" || "$1" = "help" ]]; then
 fi
 
 TESTS_DIR=tests
-if [ ! -z $1 ]; then
-	# Check if platform is online
-	ONLINE_JUDGE=
-	if [ $1 = "ONLINE_JUDGE" ]; then
-	 	ONLINE_JUDGE="ONLINE_JUDGE=\"-D=ONLINE_JUDGE\""
-		TESTS_DIR=tests
-	else
-		TEST_TO_RUN=$1
-	fi
-else
-	TEST_TO_RUN="ALL"
-fi
 
 # Check if Makefile exists
 if [ ! -f Makefile ]; then
@@ -240,7 +227,6 @@ fi
 
 # Compile checker
 make -f Makefile.PA all $ONLINE_JUDGE &> /dev/null
-rm -rf $SOURCE_TMP_DIR
 
 # Display tests set
 echo -e "${BLUE}	 		Run $TESTS_DIR					${NC}"

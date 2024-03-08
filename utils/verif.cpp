@@ -1,10 +1,7 @@
-/* Copyright 2018
- * Neatu Darius-Florentin <neatudarius@gmail.com>
- */
-
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+
 using namespace std;
 
 int max(int a, int b) {
