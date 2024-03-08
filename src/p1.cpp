@@ -24,8 +24,6 @@ public:
 
     bool readGraph(const std::string& file) {
         std::ifstream fin(file);
-        std::ios::sync_with_stdio(false);
-
         if (!fin) {
             std::cerr << "[ERR]: opening input file." << std::endl;
             return false;
