@@ -65,7 +65,7 @@ test_p3() {
 }
 
 check_readme() {
-	README=README
+	README=README.md
 
 	echo -e "${BLUE}---------------------------------------------------------"
 	echo "---------------------------------------------------------"
@@ -226,7 +226,7 @@ if [ $cnt -gt 0 ]; then
 fi
 
 # Compile checker
-make -f Makefile.PA all $ONLINE_JUDGE &> /dev/null
+make -f Makefile.Utils all $ONLINE_JUDGE &> /dev/null
 
 # Display tests set
 echo -e "${BLUE}	 		Run $TESTS_DIR					${NC}"
@@ -237,7 +237,7 @@ check_readme
 
 # Clean junk
 make -f Makefile clean &> /dev/null
-make -f Makefile.PA clean &> /dev/null
+make -f Makefile.Utils clean &> /dev/null
 rm -rf tmp
 
 # Display result
