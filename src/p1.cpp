@@ -6,7 +6,7 @@
 class Graph {
 public:
     Graph() = default;
-    Graph(int V) : adj(adjiacent_map(V + 1)) {}
+    Graph(int V) : adj(adjacent_map(V + 1)) {}
 
     void addEdge(int u, int v) {
         adj[u].push_back(v);
@@ -61,7 +61,7 @@ public:
 
 private:
     int V, E;
-    adjiacent_map adj;
+    adjacent_map adj;
     std::unordered_set<int> vis;
     std::unordered_set<int> stack;
 

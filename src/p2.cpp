@@ -8,7 +8,7 @@
 class Graph {
 public:
     Graph() = default;
-    Graph(int N) : V(N), adj(adjiacent_weight_map(N + 1)) {}
+    Graph(int N) : V(N), adj(adjacent_weight_map(N + 1)) {}
 
     void addEdge(int u, int v, int w) {
         adj[u].emplace_back(v, w);
@@ -89,7 +89,7 @@ public:
 
 private:
     int V, E, S;
-    adjiacent_weight_map adj;
+    adjacent_weight_map adj;
     std::vector<int> dist;
 
     std::vector<int> topologicalSort() {

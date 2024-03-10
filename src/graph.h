@@ -17,7 +17,7 @@ struct Node {
 };
 
 typedef std::pair<int, int> edge;
-typedef std::vector<std::vector<edge>> adjiacent_weight_map;
-typedef std::unordered_map<int, std::vector<int>> adjiacent_map;
+typedef std::vector<std::vector<edge>> adjacent_weight_map;
+typedef std::unordered_map<int, std::vector<int>> adjacent_map;
 
 #endif // GRAPHTYPES_H
